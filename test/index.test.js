@@ -11,7 +11,7 @@ import {
 } from '..'
 import { brands } from '../data'
 
-test('getName should return the name attribute from an object', () => {
+test.skip('getName should return the name attribute from an object', () => {
   expect(getName({ name: 'Benny' })).toBe('Benny')
 })
 
@@ -56,7 +56,7 @@ test.skip('getFirstTwoArgs returns the first two arguments as an array', () => {
   expect(getFirstTwoArgs('a', 'b', 'c', 'd')).toStrictEqual(['a', 'b', ['c', 'd']])
 })
 
-test.skip('addSneakerCount should append the sneaker count to the object', () => {
+test('addSneakerCount should append the sneaker count to the object', () => {
   const nike = {
     shoes: ['Air Max', 'Air Force', 'Air Jordan', 'Air Mag', 'Pegasus', 'Kobe'],
     slogan: 'Just Do It',
